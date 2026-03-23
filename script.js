@@ -1,4 +1,4 @@
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  document.getElementById("msg").innerText = "Thanks! We'll contact you soon.";
+  document.getElementById("formMessage").innerText = "Thanks — we’ll reach out soon.";
 });
