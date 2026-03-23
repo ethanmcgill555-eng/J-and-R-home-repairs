@@ -1,4 +1,7 @@
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  document.getElementById("formMessage").innerText = "Thanks — we’ll reach out soon.";
+// Mobile menu toggle
+const menuBtn = document.getElementById('menu-btn');
+const nav = document.getElementById('nav');
+
+menuBtn.addEventListener('click', () => {
+  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
 });
