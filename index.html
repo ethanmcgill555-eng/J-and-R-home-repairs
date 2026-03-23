@@ -1,86 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan's General Contracting | Peterborough</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan's General Contracting | Peterborough, ON</title>
+  <meta name="description" content="Reliable contractor in Peterborough. Renovations, decks, fencing, and more. Get a free quote today." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
+<header class="header">
   <div class="container nav">
-    <h1 class="logo">Ryan's Contracting</h1>
-    <nav>
+    <div class="logo">Ryan's Contracting</div>
+    <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="tel:+17050000000" class="btn">Call Now</a>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h2>Quality Contracting You Can Trust</h2>
+    <h1>Built Right. Built to Last.</h1>
     <p>Serving Peterborough & surrounding areas</p>
-    <a href="#contact" class="btn">Get a Free Quote</a>
+    <a href="#contact" class="btn primary">Get a Free Quote</a>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services" class="section">
   <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
+    <h2>Services</h2>
+    <div class="grid">
       <div class="card">
         <h3>Renovations</h3>
-        <p>Kitchens, basements, bathrooms and full remodels.</p>
+        <p>Kitchens, basements, bathrooms, full remodels.</p>
       </div>
       <div class="card">
-        <h3>Exterior Work</h3>
-        <p>Decks, fencing, siding and outdoor builds.</p>
+        <h3>Exterior</h3>
+        <p>Decks, fences, siding, outdoor builds.</p>
       </div>
       <div class="card">
-        <h3>Custom Projects</h3>
-        <p>Built exactly to your needs with quality craftsmanship.</p>
+        <h3>Custom Work</h3>
+        <p>Built exactly how you want it, done right.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section light">
-  <div class="container small">
-    <h2>About Us</h2>
+<section id="about" class="section alt">
+  <div class="container narrow">
+    <h2>About</h2>
     <p>
-      Ryan's General Contracting is a trusted local contractor serving Peterborough.
-      We focus on quality work, reliability, and getting the job done right.
+      We’re a local Peterborough contractor focused on quality work and straight-up reliability.
+      No shortcuts, no BS — just solid craftsmanship and jobs done right the first time.
     </p>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="section">
-  <div class="container small">
-    <h2>Get a Free Quote</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+  <div class="container narrow">
+    <h2>Get a Quote</h2>
+    <form id="contactForm" class="form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
       <textarea placeholder="What do you need done?" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+      <button type="submit" class="btn primary">Send</button>
     </form>
-    <p id="msg"></p>
+    <p id="formMessage"></p>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
+<footer class="footer">
   <p>© 2026 Ryan's General Contracting</p>
 </footer>
 
