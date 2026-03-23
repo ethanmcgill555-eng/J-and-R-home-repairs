@@ -1,32 +1,33 @@
-// Smooth scrolling for navigation buttons
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+// Smooth scrolling for navbar links
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', function(e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if(targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 50, // offset for navbar
+        behavior: 'smooth'
+      });
     }
   });
 });
 
-// Form submission handler (demo mode)
-const form = document.querySelector('form');
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thanks for your request! We will contact you shortly.');
-  form.reset();
-});
-
-// Animate sections on scroll
-const sections = document.querySelectorAll('section');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
-    }
+// Optional: simple alert when clicking email or phone
+const contactLinks = document.querySelectorAll('#contact a');
+contactLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    console.log(`User clicked on contact link: ${link.href}`);
   });
-}, { threshold: 0.1 });
-
-sections.forEach(section => {
-  observer.observe(section);
 });
+
+// Optional: mobile menu toggle if you expand site later
+/*
+const menuButton = document.querySelector('.menu-toggle');
+const navBar = document.querySelector('.navbar');
+if(menuButton) {
+  menuButton.addEventListener('click', () => {
+    navBar.classList.toggle('active');
+  });
+}
+*/
