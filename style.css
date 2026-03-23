@@ -1,94 +1,15 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  background: #1e3a5f;
-  color: white;
-}
-
-.nav-btn {
-  color: white;
-  text-decoration: none;
-  background: #ff6600;
-  padding: 8px 15px;
-  border-radius: 5px;
-}
-
 header {
-  text-align: center;
-  padding: 80px 20px;
-  background: #f4f4f4;
-}
-
-header .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: #ff6600;
+  background: linear-gradient(to right, #1e3a5f, #2a4d80);
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
+.card h3 {
+  color: #1e3a5f;
+  font-weight: bold;
 }
 
-.grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex: 1;
-  min-width: 250px;
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-}
-
-.why ul {
-  list-style: none;
-  padding: 0;
-}
-
-.why li {
-  margin: 10px 0;
+ul li {
+  margin-bottom: 8px;
   font-size: 18px;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea {
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  padding: 12px;
-  background: #1e3a5f;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #1e3a5f;
-  color: white;
+  line-height: 1.4;
 }
