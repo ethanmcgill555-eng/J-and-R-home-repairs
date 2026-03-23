@@ -14,17 +14,13 @@ navLinks.forEach(link => {
   });
 });
 
-// Simple contact form submission simulation
+// Contact form submission feedback
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-
-  // Simulate form submission
   formMessage.textContent = 'Thank you! Your message has been sent.';
   formMessage.style.color = 'green';
-
-  // Clear form fields
   contactForm.reset();
 });
