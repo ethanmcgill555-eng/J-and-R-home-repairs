@@ -8,7 +8,7 @@ navLinks.forEach(link => {
     const targetSection = document.getElementById(targetId);
 
     window.scrollTo({
-      top: targetSection.offsetTop - 70, // offset for navbar
+      top: targetSection.offsetTop - 70,
       behavior: 'smooth'
     });
   });
