@@ -1,69 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ryan's General Contracting | Peterborough, ON</title>
-  <meta name="description" content="Ryan's General Contracting serving Peterborough, Ontario. Renovations, decks, fencing, and custom projects. Get a free quote today." />
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="header">
   <div class="container nav">
-    <div class="logo">Ryan's General Contracting</div>
-    <nav>
+    <div class="logo">Ryan's Contracting</div>
+    <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#contact" class="btn primary">Free Quote</a>
+    <a href="tel:+17050000000" class="btn">Call Now</a>
   </div>
 </header>
 
 <section class="hero">
-  <div class="overlay"></div>
   <div class="hero-content">
-    <h1>Quality Contracting You Can Trust</h1>
+    <h1>Built Right. Built to Last.</h1>
     <p>Serving Peterborough & surrounding areas</p>
     <a href="#contact" class="btn primary">Get a Free Quote</a>
   </div>
 </section>
 
 <section id="services" class="section">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Home Renovations</h3>
-      <p>Kitchens, basements, bathrooms, and full remodels.</p>
-    </div>
-    <div class="card">
-      <h3>Exterior Work</h3>
-      <p>Decks, fencing, siding, and outdoor builds.</p>
-    </div>
-    <div class="card">
-      <h3>Custom Projects</h3>
-      <p>Built exactly to your needs.</p>
+  <div class="container">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Renovations</h3>
+        <p>Kitchens, basements, bathrooms, full remodels.</p>
+      </div>
+      <div class="card">
+        <h3>Exterior</h3>
+        <p>Decks, fences, siding, outdoor builds.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Work</h3>
+        <p>Built exactly how you want it, done right.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="about" class="section light">
-  <h2>About Us</h2>
-  <p>Trusted contractor serving Peterborough, Ontario. We focus on quality work and customer satisfaction.</p>
+<section id="about" class="section alt">
+  <div class="container narrow">
+    <h2>About</h2>
+    <p>
+      We’re a local Peterborough contractor focused on quality work and straight-up reliability.
+      No shortcuts, no BS — just solid craftsmanship and jobs done right the first time.
+    </p>
+  </div>
 </section>
 
-
-
-<section id="contact" class="section light">
-  <h2>Contact Us</h2>
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn primary">Send Message</button>
-  </form>
-  <p id="formMessage"></p>
+<section id="contact" class="section">
+  <div class="container narrow">
+    <h2>Get a Quote</h2>
+    <form id="contactForm" class="form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="What do you need done?" required></textarea>
+      <button type="submit" class="btn primary">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </div>
 </section>
 
 <footer class="footer">
